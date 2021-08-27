@@ -8,10 +8,8 @@ $("#currentDay").text(moment().format("dddd MMMM DD, YYYY"));
 
 timeBlock.each(function(){
     var el=$(this);
-    //console.log(typeof(el));
     var newClass = getClass(el);
     el.children().eq(1).addClass(newClass);
-   // console.log('showing elfunction', a);
 });
 
 function getClass(element){
@@ -33,6 +31,14 @@ saveButton.on("click", function () {
     console.log(textValue);
 });
 
-for (var i=9; i <8; i++){
-$("#" + i + " .description").val(localStorage.getItem(i));
-}
+$("#9 .description").val(localStorage.getItem("9"));
+$("#10 .description").val(localStorage.getItem("10"));
+$("#11 .description").val(localStorage.getItem("11"));
+$("#12 .description").val(localStorage.getItem("12"));
+$("#13 .description").val(localStorage.getItem("13"));
+$("#14 .description").val(localStorage.getItem("14"));
+$("#15 .description").val(localStorage.getItem("15"));
+$("#16 .description").val(localStorage.getItem("16"));
+$("#17 .description").val(localStorage.getItem("17"));
+
+
