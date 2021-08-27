@@ -13,7 +13,7 @@
 In this assignment, I created a work day scheduler. You are able to enter text into the input field for the time of day and click save. It then saves the content into the local storage so when the page is refreshed it stays in place.
 
 ## Screenshots
-![Code Quiz Home page screenshot](./assets/images/screenshot.png)
+![Work Day Scheduler Screenshot](./assets/images/screenshot.png)
 
 
 ## Usage
