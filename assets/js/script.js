@@ -6,16 +6,16 @@ var timeBlock = $(".time-block");
 
 $("#currentDay").text(moment().format("dddd MMMM DD, YYYY"));
 
-timeBlock.each(function(){
-    var el=$(this);
+timeBlock.each(function () {
+    var el = $(this);
     var newClass = getClass(el);
     el.children().eq(1).addClass(newClass);
 });
 
-function getClass(element){
+function getClass(element) {
     var idSelector = element.attr("id");
     console.log(idSelector);
-    if (parseInt(idSelector) === parseInt(currentTime)){
+    if (parseInt(idSelector) === parseInt(currentTime)) {
         return "present";
     } else if (parseInt(idSelector) < parseInt(currentTime)) {
         return "past";
